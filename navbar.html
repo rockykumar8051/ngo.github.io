@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <title>NGO</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="/index.html"><img class="logo" src="images/logo 1.png" alt=""></a>
+        <h1 class="title">Astha Mahila Evam Bal Vikash Sanshan </h1>
+    </header>
+    <nav>
+        <ul>
+            <li class="log"><a href="/index.html">AMEBVS</a></li>
+            <li class="items"><a href="/index.html">Home</a></li>
+            <li class="items"><a href="#">Blogs</a></li>
+            <li class="items"><a href="/contact.html">Contact</a></li>
+            <li class="items"><a href="#">About us</a></li>
+            <li class="items"><a href="/donate.html">Donate</a></li>
+            <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+
+        </ul>
+
+
+    </nav>
+</body>
+<script>
+
+    $(document).ready(function () {
+        $('.btn').click(function () {
+            $('.items').toggleClass("show");
+            $('ul li').toggleClass("hide");
+        });
+    });
+</script>
+
+</html>

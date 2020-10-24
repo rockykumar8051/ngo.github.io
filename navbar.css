@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    margin-top: 10px;
+    padding-right: 20px;
+    width: 90px;
+    height: 80px;
+    cursor: default;
+    
+}
+
+.title{
+margin-top: 20px;
+font-weight: normal;
+font-size: 40px;
+color: #000000;
+margin-bottom: -10px;
+padding-bottom: -10px;
+}
+nav{
+  background: #FF9D0A;
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: #212121;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.log{
+  flex: 1;
+  
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+  display: none;
+}
+nav ul li.log a{
+  font-size: 23px;
+  letter-spacing: 2px;
+  text-transform: none;
+  cursor: default;
+  color: #000;
+}
+nav ul li.log a:hover{
+  color: #fff;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li:hover a{
+  color: #212121;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+
+@media  (max-width: 900px){
+    .title{
+      margin-right:10px;
+      padding: 0;
+        font-size:18px;
+        text-align: center;
+    }
+    .logo{
+        width:50px;
+        height:50px;
+        padding: 0;
+    }
+    nav ul li.log{
+     display: block;
+    }
+   
+  nav{
+    padding: 0px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  
+  nav ul li.btn{
+    display: block;
+  }
+  nav ul li.items:hover{
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #212121   ,
+    inset 0 0 10px #212121   ;
+  }
+  nav ul li.items:hover:after{
+    opacity: 0;
+  }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Document</title>
+</head>
+<body>
+     <!-- menubar -->
+     <header>
+        <a href="/index.html"><img class="logo" src="images/logo 1.png" alt=""></a>
+        <h1 class="title">Astha Mahila Evam Bal Vikash Sanshan </h1>
+    </header>
+    <nav>
+        <ul>
+            <li class="log"><a href="/index.html">AMEBVS</a></li>
+            <li class="items"><a href="/index.html">Home</a></li>
+            <li class="items"><a href="#">Blogs</a></li>
+            <li class="items"><a href="/contact.html">Contact</a></li>
+            <li class="items"><a href="#">About us</a></li>
+            <li class="items"><a href="/donate.html">Donate</a></li>
+            <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+
+        </ul>
+
+
+    </nav>
+    <section class="contact">
+        <div class="content">
+            <h2>Be a volunteer & any query</h2>
+            <p></p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa fa-map-marker"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>vishnupur (Mishra tola) <br> Begusarai(Bihar)</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <a href="tel:+9473919419">9473919419</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <a href="mailto:asthamahila.bv@gmail.com">asthamahila.bv@gmail.com</a>
+                    </div>
+                </div>
+                <div class="social-media">
+                      <a href="https://www.facebook.com/asthamahilaevambalvikash"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/asthamahila.bv/"><i class="fa fa-instagram" style="color: red;"></i></a>
+                <a href="https://twitter.com/AsthaEvam"><i class="fa fa-twitter" style="color: skyblue;"></i></a>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="number" name="" required="required">
+                        <span>Phone</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                       <textarea name="" required="required"></textarea>
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- foooter -->
+   <footer class="footer-container">
+    <div class="footer-content">         
+            <div>
+                <h2>Address</h2>
+                <ul class="address">
+                    <li>127,westwood land</li>
+                    <li>DAIS (pS Sidus</li>
+                    <li>Loandon</li>
+                    <li>Unidet kigdom</li>
+                </ul>
+            </div>
+            <div class="features">
+                <h2>useful link</h2>
+                <ul class="box">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">Donate</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <h2>social media</h2>
+                <ul class="box">
+                    <a href="https://www.facebook.com/asthamahilaevambalvikash"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/asthamahila.bv/"><i class="fa fa-instagram" style="color: red;"></i></a>
+                    <a href="https://twitter.com/AsthaEvam"><i class="fa fa-twitter" style="color: skyblue;"></i></a>
+                </ul>
+            </div>
+        </div>
+   
+<div class="footer-bottom">
+  <p>All right reserved by &copy;Rocky kumar</p>
+</div>
+</footer>
+</body>
+<script>
+
+    $(document).ready(function () {
+        $('.btn').click(function () {
+            $('.items').toggleClass("show");
+            $('ul li').toggleClass("hide");
+        });
+    });
+</script>
+
+</html>
